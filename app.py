@@ -37,4 +37,4 @@ def predict():
     return render_template('index.html',prediction_text='You will get [{}%] marks,when you do study [{}] hour per day '.format(output,int(features_value[0])))
 
 if __name__ == "__main__":
-    app.run(port=5555) 
+    app.run(debug=True) 
