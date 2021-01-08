@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Mark Predictor ML APP</title>
+   
+   <style>
+   
+     h1   {color:Blue;}
+     
+     
+     /* css code for button */
+     
+     .button_css {
+     color: #494949 !important;
+     text-transform: uppercase;
+     text-decoration:none;
+     background: #ffffff;
+     padding:20px;
+     border:4px solid #494949 !important;
+     display: inline_block;
+     transition:all 0.4s case 0s;
+     }
+     
+     .button_css:hover{
+     color:#ffffff !important;
+     background:#f6b93b !important;
+     transition: all 0.4s ease 0s;
+      }
+      
+      
+html {
+        overflow: auto;
+}
+
+      
+      </style>
+      
+    </head>
+    
+    <body>
+    
+       <div>
+         <img src="static/images/3.jpg" class="w3-border w3-padding" alt="Indian AI Production" width="1200" height="270" >
+       </div>
+       
+       <div class="Login"> 
+       
+       <center>
+       <form action="{{url_for('predict')}}"method="post">
+         <h1>   Enter Your Study Hour   </h1>
+         
+         <input align="center" type="number" name="study_hours" placeholder="study hours" required="required" width="48" height="10">
+         <br>
+         
+         
+         <br>
+         <br>
+         <br>
+         <br>
+         <div class="button_cont" align="center"><a class="button_css" href="http://bit.ly/breast-cancer-ml-project" target="_blank" rel="nofollow noopener">
+              <button type="submit" class="btn btn-primary btn-block btn-large"><strong>Predict Marks</strong></button></a>
+              
+         </div>
+    </form>
+    </center>
+    
+    <div>
+      <center>
+        <h2>{{ prediction_text}}</h2>
+      </center>
+     </div>
+     
+</div> 
+</body>
+</html>
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
